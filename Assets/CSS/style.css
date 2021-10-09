@@ -1,0 +1,229 @@
+/* semuanya */
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+*::after,
+::before {
+    box-sizing: border-box; /* include padding and border as height and width that has been set */
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.5;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Global Layout */
+
+.container {/* change all element in class "container" */
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+#header {
+    background-color: #35424a;
+    color: #fff;
+    min-height: 70px; /*ukuran tetap dari sebuah element bagaimanapun keadaanya clientnya
+    /*height: 70px;*/
+    padding-top: 30px;
+    border-bottom: #3c8bf3 3px solid;
+}
+
+/* bagian ngebut nanti pelajarin sendiri */
+
+#header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem 16px;
+    font-weight: bold;
+}
+
+#header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 20px;
+}
+
+#header #branding h1 {
+    float: left;
+}
+
+#header #branding h1 {
+    margin: 0;
+}
+
+#header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+#header .highlight, #header .current a {
+    color: #3c8bf3;
+    font-weight: bold;
+}
+
+#header a:hover {
+    color: #ccc;
+    font-weight: bold;
+}
+
+/* showcase */
+#showcase {
+    min-height: 400px;
+    background-image: url('../IMG/Orang\ Ngetik.jpeg');
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/* Bagian newsletter */
+
+#newsletter {
+    padding: 15px;
+    color: #fff;
+    background: #35424a;
+}
+
+/* cara (beginner) */
+/*#newsletter h1 {
+    float: left;
+    margin-top: 15px;
+}
+
+#newsletter h1::after, ::before {
+    clear: both;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 10px;
+}
+*/
+
+#newsletter input[type = "email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* cara expert */
+.alignment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button_1 {
+    height: 38px;
+    background: #3c8bf3;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.button_1:hover {
+    filter: brightness(90%);
+}
+
+/* Bagian Boxes */
+
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img {
+    width: 90px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #3c8bf3;
+    text-align: center;
+}
+
+
+/* Bagian page about */
+
+
+#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+#main-col{
+    margin-top: 10px;
+    float: left;
+    width: 65%;
+}
+
+.dark {
+    padding: 15px;
+    background-color: #35424a;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+.dark:hover {
+    box-shadow: #000 10px 10px;
+    cursor: default;
+}
+
+/* scroll bar */
+/*
+/*width*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
